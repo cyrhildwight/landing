@@ -8,37 +8,45 @@
 </head>
 <body class="min-h-screen overflow-x-hidden text-white bg-no-repeat bg-center bg-fixed bg-cover bg-blend-overlay"
     style="background-image: linear-gradient(135deg, #0a0f2c, #000014), url('pic/bg.jpg');">
-  <header>
-        <div
-            class="cursor-default flex justify-between items-center px-10 py-[5px] fixed top-0 left-0 w-full z-[100] bg-[#727272]">
-            <div class="flex items-center gap-[10px]">
-                <img src="pic/logo.png" alt="LimeTech Logo" class="h-[80px] ml-[100px] mt-[2px]">
-                <h1 class="text-[40px] font-bold text-white tracking-[1px] mt-[5px]">LIME<span class="text-[#030192]">TECH</span></h1>
-            </div>
-        <nav>
-        <ul class="cursor-pointer flex gap-[90px] list-none">
-          <li><a href="landing2.html" class="text-white no-underline font-bold text-[20px] transition-colors duration-300 hover:text-[#030192]">Home</a></li>
-          <li><a href="about2.html" class="text-white no-underline font-bold text-[20px] transition-colors duration-300 hover:text-[#030192]">About</a></li>
-          <li><a href="product.html" class="text-white no-underline font-bold text-[20px] transition-colors duration-300 hover:text-[#030192]">Products</a></li>
-          <li><a href="contact.html" class="text-white no-underline font-bold text-[20px] transition-colors duration-300 hover:text-[#030192]">Contact</a></li>
-        </ul>
-      </nav>
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#727272]">
+  <div class="relative flex flex-col md:flex-row md:items-center md:justify-between px-5 md:px-10 py-3">
+
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="pic/logo.png" alt="LimeTech Logo" class="h-[60px]">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">LIME<span class="text-[#030192]">TECH</span></h1>
+      </div>
+
+      <input id="menu-toggle" type="checkbox" class="peer hidden">
+      <label for="menu-toggle" class="md:hidden text-white text-3xl cursor-pointer">
+        &#9776;
+      </label>
     </div>
-  </header>
-  <section class="pt-[80px] pb-[80px] px-[10%] bg-[rgba(10,15,44,0.92)] text-[#cbd5e1] leading-[1.8] mr-[400px] ml-[400px] mb-[30px] shadow-[lightblue] rounded-[15%] mt-[200px]">
+
+    <ul class="peer-checked:flex hidden flex-col md:flex md:flex-row md:items-center gap-6 md:gap-10 mt-4 md:mt-0 md:ml-auto bg-[#727272] md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none">
+      <li><a href="landing2.html" class="text-white font-bold hover:text-[#030192]">Home</a></li>
+      <li><a href="about2.html" class="text-white font-bold hover:text-[#030192]">About</a></li>
+      <li><a href="product2.html" class="text-white font-bold hover:text-[#030192]">Products</a></li>
+      <li><a href="contact2.html" class="text-white font-bold hover:text-[#030192]">Contact</a></li>
+    </ul>
+  </div>
+</header>
+  <section class="pt-[100px] pb-20 px-4 md:px-[10%] mx-auto max-w-4xl bg-[rgba(10,15,44,0.92)] text-[#cbd5e1] leading-8 shadow-md rounded-[60px] mt-40">
     <div class="container">
-      <h1 class="text-[#00ffff] text-[2.7rem] mb-[50px] text-center font-bold">About LimeTech</h1>
-      <p class="max-w-[800px] mt-5 mb-5 mx-auto text-[1.1rem] text-justify">
+      <h1 class="text-[#00ffff] text-3xl md:text-4xl mb-8 text-center font-bold">About LimeTech</h1>
+
+      <p class="mb-6 text-justify text-[1.05rem]">
         LimeTech is a fictional tech brand created to showcase a fully functional website for computer products. 
         The goal of this project is to design a clean, responsive, and modern landing page where users can explore 
         a variety of computer hardware like CPUs, gaming PCs, accessories, and more.
       </p>
 
-      <p class="max-w-[800px] mt-5 mb-5 mx-auto text-[1.1rem] text-justify">
+      <p class="mb-6 text-justify text-[1.05rem]">
         This website includes interactive sections such as animated scroll effects, smooth navigation, and product imagery.
         It aims to demonstrate frontend design skills using HTML and CSS, with potential for future expansion using JavaScript and database integration.
       </p>
-      <p class="max-w-[800px] mt-5 mb-5 mx-auto text-[1.1rem] text-justify">
+
+      <p class="mb-4 text-justify text-[1.05rem]">
         Every section is designed to highlight modern tech visuals, providing users with a smooth and immersive browsing experience.
       </p>
     </div>

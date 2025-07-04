@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | LimeTech</title>
+</head>
+<body class="text-white min-h-screen overflow-x-hidden font-[Segoe_UI,sans-serif] bg-cover bg-center bg-fixed bg-blend-overlay"
+      style="background-image: linear-gradient(135deg, #0a0f2c, #000014), url('pic/bg.jpg');">
+  <header class="fixed top-0 left-0 w-full z-[100] bg-[#727272]">
+        <div
+            class="flex justify-between items-center px-5 md:px-10 py-2">
+            <div class="flex items-center gap-3">
+                <img src="pic/logo.png" alt="LimeTech Logo" class="h-[60px]">
+                <h1 class="text-2xl md:text-4xl font-bold text-white">LIME<span
+                        class="text-[#030192]">TECH</span></h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+              <label for="menu-toggle" class="text-white text-3xl md:hidden cursor-pointer"> &#9776;
+                </label>
+            <ul class="hidden md:flex gap-10 list-none">
+      <li><a href="landing2.html" class="text-white font-bold hover:text-[#030192]">Home</a></li>
+      <li><a href="about2.html" class="text-white font-bold hover:text-[#030192]">About</a></li>
+      <li><a href="product2.html" class="text-white font-bold hover:text-[#030192]">Products</a></li>
+      <li><a href="contact2.html" class="text-white font-bold hover:text-[#030192]">Contact</a></li>
+      </ul>
+        </div>
+        <ul class="peer-checked:flex hidden flex-col md:hidden bg-[#727272] text-center pb-4">
+    <li><a href="landing2.html" class="block py-2 text-white font-bold hover:text-[#030192]">Home</a></li>
+    <li><a href="about2.html" class="block py-2 text-white font-bold hover:text-[#030192]">About</a></li>
+    <li><a href="product2.html" class="block py-2 text-white font-bold hover:text-[#030192]">Products</a></li>
+    <li><a href="contact2.html" class="block py-2 text-white font-bold hover:text-[#030192]">Contact</a></li>
+  </ul>
+    </header>
+  <section class="mt-[195px] bg-[#727272] flex flex-col items-center gap-[40px] text-center mt-[80px]">
+    <div class="max-w-[1100px] w-full mx-auto text-center px-[30px] py-[40px] box-border">
+      <h2 class="text-[2.5rem] text-[#00ffff] mb-[10px] font-bold">Contact Us</h2>
+      <p class="text-[1.1rem] text-slate-300 leading-[1.8]">We'd love to hear from you. Send us a message below or connect on social media.</p>
+    </div>
+
+    <form action="#" method="post" class="flex flex-col gap-[15px] w-full max-w-[500px] mx-auto mb-[20px]">
+      <input class="p-4 rounded-lg w-full bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400" type="text" name="name" placeholder="Your Name" required />
+      <input class="p-4 rounded-lg w-full bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400" type="email" name="email" placeholder="Your Email" required />
+      <textarea class="p-4 rounded-lg w-full bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="inline-block mt-[30px] px-[30px] py-[12px] border-2 border-[#00ffd5] text-[#00ffd5] no-underline rounded-[30px] font-bold transition-all duration-300 hover:bg-[#00ffff] hover:text-[#0a0f2c]">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="bg-[#0a0f2c] py-[12px] text-center">
+  <div class="footer-content">
+    <p class="mb-20px">Follow us on</p>
+    <div class="flex justify-center gap-[10px]">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="pic/Facebook-logo.png" alt="Facebook"
+        class="w-[50px] h-[50px] transition-transform duration-300 hover:scale-125">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="pic/twitter.png" alt="Twitter"
+        class="w-[50px] h-[50px] transition-transform duration-300 hover:scale-125">
+      </a>
+      <a href="https://gmail.com" target="_blank" aria-label="Gmail">
+        <img src="pic/gmail.png" alt="Gmail"
+        class="w-[50px] h-[50px] transition-transform duration-300 hover:scale-125">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="pic/insta.png" alt="Instagram" class="w-[50px] h-[50px] transition-transform duration-300 hover:scale-125">
+      </a>
+    </div>
+    <p>&copy; 2025 LimeTech. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
